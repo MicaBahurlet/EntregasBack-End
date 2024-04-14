@@ -21,15 +21,16 @@ const newGastoPrompts = [
         type: "date",
         name: "fecha",
         message: "Fecha del gasto: ",
+        locale: "es-ES",  // para que sea en español
         format: {month:"short", hour:undefined, minute:undefined}
     },
     {
-        type: "date",
+        type: "input",
         name: "valor",
-        message: "Valor del gasto: ",
+        message: "Valor del gasto (solo numeros): ",
         validate: (value) => {
             const valid = !isNaN(parseFloat(value));
-            return valid || "Por favor ingresa un valor valido";
+            return valid || "Por favor ingresa solo números";
         }
     },
     {

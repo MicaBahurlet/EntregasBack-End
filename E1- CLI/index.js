@@ -11,7 +11,7 @@ const main = async () => {
         const action = await inquirer.prompt([
             {
                 type: "list",
-                name: "action",
+                name: "chosen",
                 message: "Que quieres hacer?",
                 choices: [
                     { value:1, name:"Ver todos los gastos" },
@@ -58,5 +58,5 @@ async function createNewGasto() {
 
 async function getAllGastos() {
     const currentGastos = await get("gastos");
-    console.log (currentGastos);
+    console.log ( "Tus gastos hasta ahora son:", currentGastos);
 }

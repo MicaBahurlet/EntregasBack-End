@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Prompt', sans-serif;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+}
+
+h2,h3 {
+    
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+
+}
+
+.Video {
+    margin-top: 5rem;
+}
