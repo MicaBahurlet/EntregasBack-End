@@ -1,7 +1,8 @@
 // esta dentro de modelo porque es una plantilla 
+// el modelo es una interface para comunicar el schema con la API
 
 import express, { Express } from "express"; // los dos, Necesito "Express" para la clase y el otro para exportar
-import gastosRoutes  from "../routes/gastos.ts";
+import gastosRoutes  from "../routes/gastos";
 import { conectarDB } from "../database/config";
 
 export class Server {
@@ -31,8 +32,8 @@ export class Server {
     
 
     listen() : void {
-        this.app.listen(8080, () => {
-            console.log("Servidor corriendo en el puerto 8080");
+        this.app.listen(5500, () => {
+            console.log("Servidor corriendo en el puerto 5500");
         });
     }
 }
