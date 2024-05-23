@@ -1,3 +1,5 @@
+// esta dentro de modelo porque es una plantilla 
+
 import express, { Express } from "express"; // los dos, Necesito "Express" para la clase y el otro para exportar
 import gastosRoutes  from "../routes/gastos.ts";
 import { conectarDB } from "../database/config";
