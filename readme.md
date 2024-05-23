@@ -16,8 +16,8 @@ Es la actividad N1 del módulo backend correspondiente a mi carrera de programac
 E2: 📍 Deberan realizar una API que simule ser una app de gastos. La misma contara con la funcionalidad de guardar los gastos y datos de un usuario. 
 Además,debe permitir realizar post / get / getId sin necesidad de tener un JSON de manera local, sino que esté persistido en la DB ( Mongo Atlas ).
 
-Conntraseña MongoAtlas: NUCBAgastos
-Clusters: NUCBAgastosE2
+Contraseña MongoAtlas: NUCBAgastos <br>
+Clusters: NUCBAgastosE2 <br>
 conexion string: mongodb+srv://micabahurletgo:<password>@nucbagastose2.tzk1ayt.mongodb.net/
 
 <hr>
