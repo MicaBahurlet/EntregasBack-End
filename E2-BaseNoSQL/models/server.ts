@@ -32,8 +32,8 @@ export class Server {
     
 
     listen() : void {
-        this.app.listen(5500, () => {
-            console.log("Servidor corriendo en el puerto 5500");
+        this.app.listen(3000, () => {
+            console.log("Servidor corriendo en el puerto 3000");
         });
     }
 }
