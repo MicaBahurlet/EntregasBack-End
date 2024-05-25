@@ -25,7 +25,8 @@ export class Server {
     middlewares() : void {
         this.app.use(express.json());
     }
-
+    
+    // Aquí tenía un error, ojo con los espacios en las rutas. 
     routes() : void {
         this.app.use("/api/gastos", gastosRoutes);
     }

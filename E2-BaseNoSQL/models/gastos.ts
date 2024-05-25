@@ -7,28 +7,38 @@ import { Model, Schema, model } from "mongoose"; //importo mongoose
 
 export interface IGasto {
     
-    gasto: Number;
+    valor: Number;
     concepto: String;
-    fecha: Date;
+    fecha: String;
+    // estado: Boolean;
+    
 }
 
 // creo el schema, <Aqui pongo el tipo de schema> y dentro del objeto defino las propiedades y tipo de datos. es una nueva instancia de la clase estema del tipo Igasto. Es una plantilla. 
 const gastoSchema = new Schema<IGasto>({
 
     
-    gasto: {
+    valor: {
         type: Number, 
         required: true,
         // unique: true
+      
     },
     concepto: {
         type: String, 
-        required: true
+        required: true,
+        
     },
     fecha: {
-        type: Date, 
-        required: true
+        type: String, 
+        required: true,
+        
     },
+    // estado: {
+    //     type: Boolean, 
+    //     required: true,
+        
+    // }
     
 })
 
