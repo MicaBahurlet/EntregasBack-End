@@ -19,5 +19,6 @@ Además,debe permitir realizar post / get / getId sin necesidad de tener un JSON
 Contraseña MongoAtlas: NUCBAgastos <br>
 Clusters: NUCBAgastosE2 <br>
 conexion string: mongodb+srv://micabahurletgo:<password>@nucbagastose2.tzk1ayt.mongodb.net/
+Consulta base de datos: http://localhost:3000/api/gastos
 
 <hr>
