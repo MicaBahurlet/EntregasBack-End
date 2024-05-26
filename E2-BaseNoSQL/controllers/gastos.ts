@@ -41,8 +41,10 @@ export const createGasto = async (req:Request, res:Response) => {
 
 export const updateGasto = async (req:Request, res:Response) => {
     const { id } = req.params;
-    const gastoData: IGasto = req.body;
-    const gasto = await Gasto.findByIdAndUpdate(id, gastoData, { new: true }); //metodo FindOneAndUpdate para que busque y actualice
+    // const gastoData: IGasto = req.body;
+
+    const { ...gastoData } = req.body;
+    const gasto = await Gasto.findByIdAndUpdate({id: id}, gastoData); //metodo FindOneAndUpdate para que busque y actualice con PATCH. Va a buscar el id y va a sobreescribir el objeto data que le pasemos nosotros
     res.json({ gasto });
 }
 
@@ -50,6 +52,7 @@ export const deleteGasto = async (req:Request, res:Response) => {
     const { id } = req.params;
     const gasto = await Gasto.findByIdAndDelete(id);
 
+    //Validación por si no existe, sale mensaje en consola
     if (!gasto) {
         res.json({ 
             msg: "Gasto no encontrado"
