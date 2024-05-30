@@ -10,7 +10,7 @@ export interface IGasto {
     valor: Number;
     concepto: String;
     fecha: String;
-    // estado: Boolean;
+    
     
 }
 
@@ -21,7 +21,7 @@ const gastoSchema = new Schema<IGasto>({
     valor: {
         type: Number, 
         required: true,
-        // unique: true
+       
       
     },
     concepto: {
