@@ -34,12 +34,7 @@ const gastoSchema = new Schema<IGasto>({
         required: true,
         
     },
-    // estado: {
-    //     type: Boolean, 
-    //     required: true,
-        
-    // }
-    
+
 })
 
 const Gasto: Model <IGasto> = model <IGasto> ("Gasto", gastoSchema); //creo el modelo y le paso el nombre del esquema y el esquema. ¿Que va a almzacenar? // es importante la clase Model porque sino nunca voy a poder pushear nuevos gastos, u obtenerlos. con el método "model" creo un modelo y le paso el nombre y en qué se va a basar. 
