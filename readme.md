@@ -21,4 +21,22 @@ Clusters: NUCBAgastosE2 <br>
 conexion string: mongodb+srv://micabahurletgo:<password>@nucbagastose2.tzk1ayt.mongodb.net/
 Consulta base de datos: http://localhost:3000/api/gastos
 
+npm run start para correr proyecto
+
+Estructura para agregar desde MongoCompas:
+
+{
+  "_id": {
+    "$oid": "6658801964bf674753f514b7"
+  },
+
+  "valor": 100,
+
+  "concepto": "ejemplo",
+
+  "fecha": "2024-06-01T00:00:00.000Z"
+  
+}
+
+
 <hr>
